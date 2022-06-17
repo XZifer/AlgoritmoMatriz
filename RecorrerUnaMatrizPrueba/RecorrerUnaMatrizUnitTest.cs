@@ -1,3 +1,5 @@
+using RecorrerUnaMatrizBiblioteca;
+
 namespace RecorrerUnaMatrizPrueba
 {
     [TestClass]
@@ -11,13 +13,13 @@ namespace RecorrerUnaMatrizPrueba
         public void Prueba3Regresa97638()
         {
             //Arrange = Arreglar o adecuar la prueba unitaria
-            Algoritmo algoritmoDistanciaBinaria = new Algoritmo();
+            Algoritmo algoritmoRecorrerMatriz = new Algoritmo();
             int evaluado = 3;
             int obtenido;
             int esperado = [9,7,6,3,8];
             //Act = Actuar o realizar la prueba
-            obtenido = algoritmoDistanciaBinaria.CalculaDistanciaBinaria(evaluado);
-            //Assert = Afirmar, verificar que la prueba cumple la condicion N=9 distanciabinaria=2
+            obtenido = algoritmoRecorrerMatriz.RecorrerMatriz(evaluado);
+            //Assert = Afirmar, verificar que la prueba cumple la condicion k=3 RecorrerMatriz=[9,7,6,3,8]
             Assert.AreEqual(esperado, obtenido);
         }
     }
