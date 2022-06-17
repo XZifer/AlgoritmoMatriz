@@ -2,7 +2,7 @@
 {
     public class Algoritmo
     {
-        public int RecorrerMatriz(int k)
+        public string RecorrerMatriz(int k)
         {
             //Creamos una lista
             List<string> matriz = new List<string>();
@@ -20,7 +20,7 @@
             }
             //imprimir cada uno de los valores de la lista
             string cadena = matriz.Aggregate((x, y) => x + "," + y);
-            return 0;
+            return cadena;
         }
     }
 }
